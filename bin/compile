@@ -181,7 +181,7 @@ main() {
     build_and_install_freetds
 
     topic "Testing build"
-    "$APP_TARGET_DIR/bin/tsql" -C | indent
+    # "$APP_TARGET_DIR/bin/tsql" -C | indent
 
     cache_build_artifacts_for_future_deploys
   fi
